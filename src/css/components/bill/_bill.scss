@@ -1,0 +1,35 @@
+//********************************************
+//** Component of Bill
+//********************************************
+
+.bill {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+
+  &__header {
+    padding: $space-xs;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: em(24);
+    text-align: center;
+  }
+
+  &__list {
+    border: 1px solid gray;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: em(20);
+    margin-top: $space;
+  };
+
+  &__footer-label {
+    font-weight: bold;
+  }
+}

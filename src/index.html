@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Bill Pub</title>
+  </head>
+  <body>
+    <main class="bill">
+      <header class="bill__header">
+        <h2 class="bill__title">Table 1</h2>
+      </header>
+      
+      <ul class="bill__list"></ul>
+
+      <footer class="bill__footer">
+        <span class="bill__footer-label">Total Paid</span> 
+        <span class="bill__footer-total">$0.00</span>
+      </footer>
+
+      <form id="addItem"  class="addItem" action="#" method="post">
+          <fieldset>
+            <legend class="addItem__legend">Add new Item</legend>
+            <input type="text" class="addItem__input" placeholder="Name" name="name"/>
+            <input type="number"  class="addItem__input" placeholder="Price" name="price"/>
+            <input type="submit" class="addItem__button" value="Add"/>
+          </fieldset>
+        </form>
+    </main>
+  </body>
+</html>

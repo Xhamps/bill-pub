@@ -1,0 +1,35 @@
+//********************************************
+//** Component of From to add new Item
+//********************************************
+
+.addItem {
+  margin: $space 0 0;
+
+  &__button {
+    background: black;
+    border-radius: $space;
+    color: white;
+    cursor: pointer;
+    font-size: rem(16);
+    padding: rem(8);
+    text-decoration: none;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__legend {
+    font-size: rem(14);
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    font-size: rem(14);
+    line-height: rem(30);
+    margin-right: $space-xs;
+  }
+}

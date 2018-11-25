@@ -1,0 +1,13 @@
+//********************************************
+//** Main layout
+//********************************************
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  padding: $space;
+
+  @include media(750px) {
+    padding: $space-xs;
+  }
+}

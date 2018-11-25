@@ -1,0 +1,81 @@
+//********************************************
+//** Component of Bill Item
+//********************************************
+
+.bill .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space-xs;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid gray;
+  }
+
+  &__description {
+    width: 190px;
+  }
+
+  &__description-label {
+    font-size: rem(14);
+    font-weight: bold;
+  }
+
+  &__description-price {
+    font-size: rem(12);
+    font-weight: 300;
+    margin-top: rem(4);
+  }
+
+  &__quantity {
+    font-size: rem(18);
+    font-weight: bold;
+  }
+
+  &__quantity-value {
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+  }
+
+  &__button {
+    background: black;
+    border-radius: $space;
+    color: white;
+    display: inline-block;
+    font-size: rem(16);
+    padding: rem(8);
+    text-decoration: none;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__value {
+    font-size: rem(20);
+    font-weight: bold;
+    text-align: right;
+    width: 190px;
+  }
+
+  &__remove {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    height: rem(20);
+    margin-left: rem(4);
+    width: rem(20);
+    text-decoration: none;
+    text-align: center;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

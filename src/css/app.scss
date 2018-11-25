@@ -1,0 +1,22 @@
+//********************************************
+//** Load pre configs of css and sass
+//********************************************
+
+@import "config/reset";
+@import "config/variables";
+@import "config/mixin";
+@import "config/font";
+
+//********************************************
+//** Layouts
+//********************************************
+
+@import "layout/main";
+
+//********************************************
+//** Components
+//********************************************
+
+@import "components/addItem";
+@import "components/bill/bill";
+@import "components/bill/item";

@@ -1,0 +1,21 @@
+//********************************************
+//** Mixin
+//********************************************
+
+@mixin media($width) {
+	@media only screen and (max-width: $width) {
+		& {
+	    	@content;
+	  	}
+  	}
+}
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
+}
+
+@function rem($pixels) {
+  @return #{$pixels/$browser-context}rem
+}
